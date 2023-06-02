@@ -3,15 +3,24 @@
 // 2, 4 -> 16
 
 
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int n = int.Parse(Console.ReadLine()!), result = 1;
+// for (int i = 2; i <= n; i++)
+// result *= i;
+// Console.WriteLine($"{n}! = {result}");
+
+
 Console.Clear();
 Console.Write("Введите число: ");
-int n = int.Parse(Console.ReadLine()!);
+int n = int.Parse(Console.ReadLine()!), res = 1;
 Console.Write("Введите число: ");
 int m = int.Parse(Console.ReadLine()!);
 
-// n = Math.Abs(n); // Модуль числа
-for (int m = n * n; m <= n; m++)
-Console.Write($"{m} ");
+for (int i = 1; i == n; i++)
+res *= n;
 
 
-// for (int i = (-1) * n; i <= n; i++)
+Console.Write($"{res}");
+
+
